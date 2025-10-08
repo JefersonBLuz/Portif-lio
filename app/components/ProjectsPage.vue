@@ -74,7 +74,6 @@
         <ul class="max-w-2xl mx-auto list-disc list-inside text-gray-300 text-lg space-y-2">
           <li><strong>2º Lugar</strong> - NASA Space Apps Challenge (Etapa Salvador).</li>
           <li><strong>3º Lugar</strong> - Hackathon CEPEDI (Desenvolvimento de Soluções para a Indústria).</li>
-          <li>Menção Honrosa por Inovação em Hackathon de Logística.</li>
         </ul>
       </div>
 
