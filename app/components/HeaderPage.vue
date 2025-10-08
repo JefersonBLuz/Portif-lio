@@ -16,23 +16,37 @@
       </div>
     </v-container>
   </v-app-bar>
+
+  <!-- Navegação inferior somente em mobile -->
+  <v-bottom-navigation
+    v-if="smAndDown"
+    elevation="8"
+    class="fixed bottom-0 left-0 right-0 bg-gray-900/60 backdrop-blur-md border-t border-white/10 text-white pb-[env(safe-area-inset-bottom)]"
+    mode="shift"
+  >
+    <v-btn
+      v-for="item in navItems"
+      :key="item.href"
+      :href="item.href"
+      variant="text"
+    >
+      <v-icon :icon="item.icon" />
+      <span class="text-xs">{{ item.label }}</span>
+    </v-btn>
+  </v-bottom-navigation>
 </template>
 
 <script setup lang="ts">
-import { useTheme } from 'vuetify'
-import { computed } from 'vue'
+import { useDisplay } from 'vuetify'
+type NavItem = { label: string; href: string; icon: string }
+const navItems: NavItem[] = [
+  { label: 'Início', href: '#hero', icon: 'mdi-home' },
+  { label: 'Sobre', href: '#about', icon: 'mdi-account' },
+  { label: 'Projetos', href: '#projects', icon: 'mdi-briefcase' },
+  { label: 'Contato', href: '#contact', icon: 'mdi-email' }
+]
 
-const preferenceKey = 'theme-preference'
-const theme = useTheme()
-
-const isDark = computed(() => theme.global.current.value.dark)
-const themeLabel = computed(() => (isDark.value ? 'Alternar para tema claro' : 'Alternar para tema escuro'))
-
-function toggleTheme() {
-  const next = isDark.value ? 'light' : 'dark'
-  theme.global.name.value = next
-  localStorage.setItem(preferenceKey, next)
-}
+const { smAndDown } = useDisplay()
 </script>
 
 
