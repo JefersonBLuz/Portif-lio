@@ -18,49 +18,29 @@
 
       <div class="mt-16 text-center">
         <h3 class="text-3xl font-bold text-white mb-8">Minhas Ferramentas</h3>
-        <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-6">
-
-          <div class="flex flex-col items-center gap-2 p-4 w-28">
-            <Icon name="logos:nuxt-icon" class="text-5xl" />
-            <span class="text-sm">Nuxt.js</span>
+        <ClientOnly>
+          <div
+            class="flex flex-wrap justify-center items-center gap-3 sm:gap-4"
+            role="list"
+            aria-label="Ferramentas e tecnologias"
+          >
+            <div
+              v-for="tool in tools"
+              :key="tool.name"
+              :title="tool.name"
+              role="listitem"
+              tabindex="0"
+              class="w-24 h-16 sm:w-28 sm:h-20 rounded-2xl bg-gradient-to-b from-gray-700/70 to-gray-800/70
+                     hover:from-gray-700 hover:to-gray-800 transition-all grid place-items-center shadow-sm shadow-black/20
+                     ring-1 ring-white/5 hover:ring-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500/60
+                     select-none"
+            >
+              <span class="text-xs sm:text-sm text-gray-100 font-medium text-center px-2 leading-snug tracking-wide">
+                {{ tool.name }}
+              </span>
+            </div>
           </div>
-
-          <div class="flex flex-col items-center gap-2 p-4 w-28">
-            <Icon name="logos:nestjs" class="text-5xl" />
-            <span class="text-sm">Nest.js</span>
-          </div>
-
-          <div class="flex flex-col items-center gap-2 p-4 w-28">
-            <Icon name="logos:fastapi-icon" class="text-5xl" />
-            <span class="text-sm">FastAPI</span>
-          </div>
-
-          <div class="flex flex-col items-center gap-2 p-4 w-28">
-            <Icon name="logos:python" class="text-5xl" />
-            <span class="text-sm">Python</span>
-          </div>
-
-          <div class="flex flex-col items-center gap-2 p-4 w-28">
-            <Icon name="logos:postgresql" class="text-5xl" />
-            <span class="text-sm">PostgreSQL</span>
-          </div>
-
-          <div class="flex flex-col items-center gap-2 p-4 w-28">
-            <Icon name="logos:docker-icon" class="text-5xl" />
-            <span class="text-sm">Docker</span>
-          </div>
-
-          <div class="flex flex-col items-center gap-2 p-4 w-28">
-            <Icon name="logos:git-icon" class="text-5xl" />
-            <span class="text-sm">Git</span>
-          </div>
-
-          <div class="flex flex-col items-center gap-2 p-4 w-28">
-            <Icon name="logos:microsoft-power-bi" class="text-5xl" />
-            <span class="text-sm">Power BI</span>
-          </div>
-
-        </div>
+        </ClientOnly>
       </div>
 
     </div>
@@ -68,5 +48,28 @@
 </template>
 
 <script setup lang="ts">
-// Nenhuma lógica de script necessária para este componente estático.
+type Tool = { name: string; icon: string }
+
+const tools: Tool[] = [
+  { name: "VS Code", icon: "logos:visual-studio-code" },
+  { name: "Git", icon: "logos:git-icon" },
+  { name: "HTML5", icon: "logos:html-5" },
+  { name: "CSS3", icon: "logos:css-3" },
+  { name: "Figma", icon: "logos:figma" },
+  { name: "Nuxt", icon: "logos:nuxt-icon" },
+  { name: "Vue", icon: "logos:vue" },
+  { name: "Bootstrap", icon: "logos:bootstrap" },
+  { name: "Tailwind", icon: "logos:tailwindcss-icon" },
+  { name: "Jest", icon: "logos:jest" },
+  { name: "Cypress", icon: "logos:cypress" },
+  { name: "PostgreSQL", icon: "logos:postgresql" },
+  { name: "MongoDB", icon: "logos:mongodb-icon" },
+  { name: "MySQL", icon: "logos:mysql" },
+  { name: "Java", icon: "logos:java" },
+  { name: "JavaScript", icon: "logos:javascript" },
+  { name: "TypeScript", icon: "logos:typescript-icon" },
+  { name: "Node.js", icon: "logos:nodejs-icon" },
+  { name: "C", icon: "vscode-icons:file-type-c" },
+  { name: "Docker", icon: "logos:docker-icon" }
+]
 </script>

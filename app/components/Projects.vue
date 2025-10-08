@@ -7,19 +7,27 @@
       </h2>
       <div class="w-24 h-1 bg-green-500 mx-auto mb-12"></div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
         
         <div 
           v-for="project in projects" 
           :key="project.title" 
-          class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300"
+          class="bg-gray-800/90 rounded-2xl overflow-hidden shadow-lg ring-1 ring-white/5 hover:ring-white/10
+                 transform hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
         >
-          <img :src="project.image" :alt="`Imagem do projeto ${project.title}`" class="w-full h-48 object-cover">
+          <div class="relative aspect-video bg-gray-900/60">
+            <img 
+              :src="project.image" 
+              :alt="`Imagem do projeto ${project.title}`" 
+              class="absolute inset-0 w-full h-full object-cover"
+              loading="lazy"
+            >
+          </div>
           
           <div class="p-6">
             <h3 class="text-2xl font-bold text-white mb-2">{{ project.title }}</h3>
             
-            <p class="text-gray-400 mb-4">{{ project.description }}</p>
+            <p class="text-gray-300 mb-4 leading-relaxed">{{ project.description }}</p>
             
             <div class="mb-6">
               <p class="text-white font-semibold mb-2">Tecnologias:</p>
@@ -27,19 +35,20 @@
                 <span 
                   v-for="tech in project.technologies" 
                   :key="tech" 
-                  class="bg-gray-700 text-green-400 px-3 py-1 rounded-full text-sm font-medium"
+                  class="px-3 py-1 rounded-full text-xs font-semibold tracking-wide
+                         bg-gray-700 text-green-400 ring-1 ring-green-500/10"
                 >
                   {{ tech }}
                 </span>
               </div>
             </div>
             
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-3">
               <a 
                 v-if="project.repoUrl"
                 :href="project.repoUrl" 
                 target="_blank" 
-                class="flex items-center gap-2 text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors"
+                class="flex items-center gap-2 text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500/60"
               >
                 <Icon name="mdi:github" class="text-xl" />
                 Repositório
@@ -48,7 +57,7 @@
                 v-if="project.liveUrl" 
                 :href="project.liveUrl" 
                 target="_blank" 
-                class="flex items-center gap-2 text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg transition-colors"
+                class="flex items-center gap-2 text-white bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-green-300/60"
               >
                 <Icon name="mdi:web" class="text-xl" />
                 Ver Online
