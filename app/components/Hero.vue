@@ -12,7 +12,7 @@
       </h2>
 
       <p class="max-w-3xl mx-auto text-lg text-gray-400 mb-10">
-        Transformando problemas de negócio complexos em soluções de software eficientes. Ex-Coordenador de TI apaixonado por tecnologia e focado no ecossistema Node.js e Python.
+        Transformando problemas de negócio complexos em soluções de software eficientes. Ex-Coordenador de TI apaixonado por tecnologia e focado nos ecossistemas Node.js, Python e tecnologias modernas de Front-end.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
