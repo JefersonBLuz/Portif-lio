@@ -3,6 +3,7 @@
     <NuxtRouteAnnouncer />
     <Hero />
     <About />
+    <Projects />
     <NuxtPage />
   </div>
 </template>
