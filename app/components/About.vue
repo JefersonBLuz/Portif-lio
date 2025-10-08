@@ -9,7 +9,7 @@
 
       <div class="max-w-4xl mx-auto text-lg text-gray-300 text-left md:text-center leading-relaxed">
         <p class="mb-6">
-          Vindo de uma sólida carreira em Logística e Coordenação de TI, descobri na programação a minha verdadeira paixão. Hoje, como Desenvolvedor de Software, meu grande diferencial é unir o pensamento estratégico e a resolução de problemas complexos, que aprimorei na gestão, com a capacidade técnica de construir soluções digitais robustas e eficientes.
+          Venho de uma sólida carreira em Logística e Coordenação de TI, descobri na programação a minha verdadeira paixão. Hoje, como Desenvolvedor de Software, meu grande diferencial é unir o pensamento estratégico e a resolução de problemas complexos, que aprimorei na gestão, com a capacidade técnica de construir soluções digitais robustas e eficientes.
         </p>
         <p>
           Minha experiência me permite não apenas escrever código, mas também entender o impacto que a tecnologia tem no negócio, garantindo que cada projeto entregue o máximo de valor. Sou movido por desafios e pela busca contínua de conhecimento, com foco especial nos ecossistemas JavaScript/TypeScript e Python.
