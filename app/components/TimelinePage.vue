@@ -96,6 +96,11 @@ const education = [
     course: 'Técnico em Análise e Desenvolvimento de Sistemas',
     institution: 'SENAI CIMATEC - Vitória da Conquista - BA',
     period: '2023 - 2024'
+  },
+  {
+    course: 'Técnico em Eletromecânica',
+    institution: 'SENAI CIMATEC - Vitória da Conquista - BA',
+    period: '2020 - 2022'
   }
 ];
 </script>
