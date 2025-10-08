@@ -10,3 +10,8 @@ html {
 body {
   @apply bg-gray-900 text-gray-200;
 }
+
+.v-theme--light body,
+body.v-theme--light {
+  @apply text-gray-900 bg-white;
+}
