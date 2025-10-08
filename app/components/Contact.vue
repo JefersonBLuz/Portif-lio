@@ -38,7 +38,7 @@ type ContactItem = {
 const contacts: ContactItem[] = [
   {
     label: 'GitHub',
-    href: 'https://github.com/jefersonbrluz',
+    href: 'https://github.com/jefersonbluz',
     icon: 'mdi-github',
     classes: 'bg-gray-700 hover:bg-gray-600'
   },
