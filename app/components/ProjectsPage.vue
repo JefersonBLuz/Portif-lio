@@ -95,7 +95,7 @@ const projects = [
     liveUrl: 'https://g9-one-challenge-amigo-secreto.vercel.app/',
   },
   {
-    title: 'Residência CEPDEI — Fullstack Pleno',
+    title: 'Residência CEPEDI — Fullstack Pleno',
     description: 'Desenvolvimento fullstack de plataforma com autenticação e integrações. Atuação em API e front.',
     image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1080&q=80',
     technologies: ['FastAPI', 'Next.js', 'APIRequest', 'PostgreSQL', 'Docker', 'Git'],
@@ -105,7 +105,7 @@ const projects = [
   {
     title: 'Aquasys — TCC',
     description: 'Sistema para cadastro e acompanhamento de abastecimento de água em zonas rurais.',
-    image: 'https://images.unsplash.com/photo-1586953208448-3151cf797f14?auto=format&fit=crop&w=1080&q=80',
+    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8ZWNvbW1lcmNlLGRhc2hib2FyZHx8fHx8fDE3MjgzMTQ0Mjg&ixlib=rb-4.0.3&q=80&w=1080',
     technologies: ['Node/Express', 'TypeScript', 'Vue', 'PostgreSQL', 'Docker'],
     repoUrl: 'https://github.com/JefersonBLuz/Projeto_TCC',
     liveUrl: null,

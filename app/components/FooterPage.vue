@@ -4,10 +4,10 @@
       
       <div class="flex justify-center items-center gap-6 mb-4">
         <a href="https://github.com/jefersonbrluz" target="_blank" aria-label="GitHub" class="hover:text-green-400 transition-colors">
-          <Icon name="mdi:github" class="text-4xl" />
+          <v-icon icon="mdi-github" size="36" />
         </a>
         <a href="https://www.linkedin.com/in/jefersonbluz/" target="_blank" aria-label="LinkedIn" class="hover:text-green-400 transition-colors">
-          <Icon name="mdi:linkedin" class="text-4xl" />
+          <v-icon icon="mdi-linkedin" size="36" />
         </a>
       </div>
       

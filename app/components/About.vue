@@ -20,25 +20,32 @@
         <h3 class="text-3xl font-bold text-white mb-8">Minhas Ferramentas</h3>
         <ClientOnly>
           <div
-            class="flex flex-wrap justify-center items-center gap-3 sm:gap-4"
-            role="list"
-            aria-label="Ferramentas e tecnologias"
+            class="
+              max-w-2xl
+              md:max-w-3xl
+              lg:max-w-4xl
+              mx-auto
+              flex flex-wrap
+              justify-center items-center
+              gap-3
+              sm:gap-4
+              md:gap-5
+              px-2
+              sm:px-4
+              md:px-6
+            "
           >
-            <div
+            <v-chip
               v-for="tool in tools"
               :key="tool.name"
-              :title="tool.name"
-              role="listitem"
-              tabindex="0"
-              class="w-24 h-16 sm:w-28 sm:h-20 rounded-2xl bg-gradient-to-b from-gray-700/70 to-gray-800/70
-                     hover:from-gray-700 hover:to-gray-800 transition-all grid place-items-center shadow-sm shadow-black/20
-                     ring-1 ring-white/5 hover:ring-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500/60
-                     select-none"
+              :prepend-icon="tool.mdi"
+              variant="tonal"
+              color="primary"
+              size="small"
+              class="text-sm mb-2"
             >
-              <span class="text-xs sm:text-sm text-gray-100 font-medium text-center px-2 leading-snug tracking-wide">
-                {{ tool.name }}
-              </span>
-            </div>
+              {{ tool.name }}
+            </v-chip>
           </div>
         </ClientOnly>
       </div>
@@ -48,28 +55,28 @@
 </template>
 
 <script setup lang="ts">
-type Tool = { name: string; icon: string }
+type Tool = { name: string; mdi?: string }
 
 const tools: Tool[] = [
-  { name: "VS Code", icon: "logos:visual-studio-code" },
-  { name: "Git", icon: "logos:git-icon" },
-  { name: "HTML5", icon: "logos:html-5" },
-  { name: "CSS3", icon: "logos:css-3" },
-  { name: "Figma", icon: "logos:figma" },
-  { name: "Nuxt", icon: "logos:nuxt-icon" },
-  { name: "Vue", icon: "logos:vue" },
-  { name: "Bootstrap", icon: "logos:bootstrap" },
-  { name: "Tailwind", icon: "logos:tailwindcss-icon" },
-  { name: "Jest", icon: "logos:jest" },
-  { name: "Cypress", icon: "logos:cypress" },
-  { name: "PostgreSQL", icon: "logos:postgresql" },
-  { name: "MongoDB", icon: "logos:mongodb-icon" },
-  { name: "MySQL", icon: "logos:mysql" },
-  { name: "Java", icon: "logos:java" },
-  { name: "JavaScript", icon: "logos:javascript" },
-  { name: "TypeScript", icon: "logos:typescript-icon" },
-  { name: "Node.js", icon: "logos:nodejs-icon" },
-  { name: "C", icon: "vscode-icons:file-type-c" },
-  { name: "Docker", icon: "logos:docker-icon" }
+  { name: "VS Code", mdi: "mdi-microsoft-visual-studio-code" },
+  { name: "Git", mdi: "mdi-git" },
+  { name: "HTML5", mdi: "mdi-language-html5" },
+  { name: "CSS3", mdi: "mdi-language-css3" },
+  { name: "Figma", mdi: "mdi-figma" },
+  { name: "Nuxt", mdi: "mdi-nuxt" },
+  { name: "Vue", mdi: "mdi-vuejs" },
+  { name: "Bootstrap", mdi: "mdi-bootstrap" },
+  { name: "Tailwind", mdi: "mdi-tailwind" },
+  { name: "Jest", mdi: "mdi-clipboard-check-outline" },
+  { name: "Cypress", mdi: "mdi-test-tube" },
+  { name: "PostgreSQL", mdi: "mdi-database" },
+  { name: "MongoDB", mdi: "mdi-leaf" },
+  { name: "MySQL", mdi: "mdi-database" },
+  { name: "Java", mdi: "mdi-language-java" },
+  { name: "JavaScript", mdi: "mdi-language-javascript" },
+  { name: "TypeScript", mdi: "mdi-language-typescript" },
+  { name: "Node.js", mdi: "mdi-nodejs" },
+  { name: "C", mdi: "mdi-language-c" },
+  { name: "Docker", mdi: "mdi-docker" }
 ]
 </script>
