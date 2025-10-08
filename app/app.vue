@@ -4,6 +4,7 @@
     <Hero />
     <About />
     <Projects />
+    <Contact />
     <NuxtPage />
   </div>
 </template>
