@@ -65,7 +65,7 @@ const tools: Tool[] = [
   { name: "Figma", mdi: "mdi-figma" },
   { name: "Nuxt", mdi: "mdi-nuxt" },
   { name: "Vue", mdi: "mdi-vuejs" },
-  { name: "Next", mdi: "mdi-next" },
+  { name: "Next", mdi: "mdi-nextjs" },
   { name: "React", mdi: "mdi-react" },
   { name: "Bootstrap", mdi: "mdi-bootstrap" },
   { name: "Tailwind", mdi: "mdi-tailwind" },
