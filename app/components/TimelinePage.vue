@@ -63,14 +63,32 @@
 <script setup lang="ts">
 const workExperience = [
   {
-    title: 'Desenvolvedor de Software',
-    company: 'CEPEDI e freelancer',
-    period: '2025 - Presente',
+    title: 'Desenvolvedor Full Stack (Freelancer | MEI)',
+    company: 'INSS de Obras Smart',
+    period: 'Novembro/2025 - Março/2026',
     description: [
-      'Desenvolvimento de APIs RESTful com Nest.js e FastAPI.',
-      'Criação de interfaces reativas com Nuxt.js (Vue) e Next.js (React).',
-      'Gerenciamento de bancos de dados PostgreSQL e otimização de queries SQL.',
-      'Implementação de pipelines de CI/CD com Docker e Git.'
+      'Desenvolvimento end-to-end de plataforma SaaS para gestão e regularização de obras, com automação financeira via Asaas.',
+      'Integração com eSocial/GOV, garantindo compliance, integridade dos dados e segurança em ambiente multi-tenant.',
+      'Stack: Next.js, NestJS, Prisma e PostgreSQL; deploy em VPS com Docker, proxy reverso e MinIO para storage privado.'
+    ]
+  },
+  {
+    title: 'Desenvolvedor Full Stack (Freelancer | MEI)',
+    company: 'Automatiza Brazil 4.0',
+    period: 'Outubro/2025 - Dezembro/2025',
+    description: [
+      'Desenvolvimento completo do sistema de gestão, da arquitetura ao ambiente de produção.',
+      'Construção de backend com NestJS + Prisma + PostgreSQL e frontend com Nuxt.js, com foco em usabilidade.',
+      'Configuração de infraestrutura e deploy em VPS com Docker, com operação local e armazenamento em bucket.'
+    ]
+  },
+  {
+    title: 'Desenvolvedor Full Stack (Residente)',
+    company: 'CEPEDI - Vitória da Conquista, BA',
+    period: 'Julho/2024 - Novembro/2025',
+    description: [
+      'Desenvolvimento de aplicação web completa com API em FastAPI (Python) e frontend em Next.js (React).',
+      'Responsável pela modelagem de dados, criação de endpoints REST e integrações para dashboards de visualização de dados.'
     ]
   },
   {
