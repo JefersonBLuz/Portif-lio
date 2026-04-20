@@ -26,7 +26,7 @@
 
 <script setup lang="ts">
 // URL do WhatsApp com mensagem pré-definida e codificada
-const whatsappUrl = 'https://wa.me/5577988486170?text=Olá!%20Vi%20seu%20portfólio%20e%20fiquei%20interessado.';
+const whatsappUrl = 'https://wa.me/5571996585476?text=Olá!%20Vi%20seu%20portfólio%20e%20fiquei%20interessado.';
 
 type ContactItem = {
   label: string

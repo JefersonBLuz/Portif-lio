@@ -12,7 +12,8 @@
       </div>
       
       <p class="text-sm">
-        © {{ new Date().getFullYear() }} Jeferson Braga Luz. Todos os direitos reservados.
+        © {{ new Date().getFullYear() }} Jeferson Braga Luz. Todos os direitos reservados. | CNPJ:
+        64.083.146/0001-20
       </p>
 
     </div>
