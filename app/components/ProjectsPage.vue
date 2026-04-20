@@ -62,6 +62,15 @@
                 <Icon name="mdi:web" class="text-xl" />
                 Ver Online
               </a>
+              <a
+                v-if="project.instagramUrl"
+                :href="project.instagramUrl"
+                target="_blank"
+                class="flex items-center gap-2 text-white bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-300/60"
+              >
+                <Icon name="mdi:instagram" class="text-xl" />
+                Instagram
+              </a>
             </div>
           </div>
         </div>
@@ -86,12 +95,13 @@
 // Projetos reais fornecidos pelo usuário.
 const projects = [
   {
-    title: 'Amigo Secreto — ONE Oracle',
-    description: 'Aplicação web para sorteio de amigo secreto, desafio da trilha ONE Oracle.',
+    title: 'INSS de Obras Smart — Sistema eSocial',
+    description: 'Plataforma web multi-tenant para gestão de obras com envio prático de dados ao eSocial, integração com pagamentos e armazenamento em bucket.',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1080&q=80',
-    technologies: ['JavaScript', 'HTML5', 'CSS3', 'Git'],
-    repoUrl: 'https://github.com/JefersonBLuz/G9ONE-Challenge-Amigo-secreto',
-    liveUrl: 'https://g9-one-challenge-amigo-secreto.vercel.app/',
+    technologies: ['Next.js', 'NestJS', 'PostgreSQL', 'Cloud', 'Segurança Multi-tenant', 'Git', 'Docker', 'Bucket Storage'],
+    repoUrl: null,
+    liveUrl: 'https://inssdeobrasmart.com.br',
+    instagramUrl: 'https://www.instagram.com/inssdeobrasmart',
   },
   {
     title: 'Residência CEPEDI — Fullstack Pleno',
@@ -100,14 +110,16 @@ const projects = [
     technologies: ['FastAPI', 'Next.js', 'APIRequest', 'PostgreSQL', 'Docker', 'Git'],
     repoUrl: null,
     liveUrl: 'https://sasi.net.br',
+    instagramUrl: "https://www.instagram.com/sasi_sistema/",
   },
   {
-    title: 'Aquasys — TCC',
-    description: 'Sistema para cadastro e acompanhamento de abastecimento de água em zonas rurais.',
+    title: 'Automatiza Brazil 4.0 — Sistema de Gestão',
+    description: 'Plataforma de gestão empresarial para acompanhar vida útil de ativos, gerar orçamentos vinculados ao fluxo de caixa, emitir ordens de serviço e enviar documentos diretamente aos clientes, com armazenamento em bucket e instalação local.',
     image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8ZWNvbW1lcmNlLGRhc2hib2FyZHx8fHx8fDE3MjgzMTQ0Mjg&ixlib=rb-4.0.3&q=80&w=1080',
-    technologies: ['Node/Express', 'TypeScript', 'Vue', 'PostgreSQL', 'Docker'],
-    repoUrl: 'https://github.com/JefersonBLuz/Projeto_TCC',
-    liveUrl: null,
+    technologies: ['Nuxt.js', 'NestJS', 'PostgreSQL', 'Bucket Storage', 'Instalação Local'],
+    repoUrl: null,
+    liveUrl: 'https://www.instagram.com/AutomatizaBrazil',
+    instagramUrl: 'https://www.instagram.com/AutomatizaBrazil',
   },
 ];
 </script>
